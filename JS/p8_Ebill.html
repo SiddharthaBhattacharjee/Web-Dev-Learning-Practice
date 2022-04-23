@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Electric Bill Calculator!</h1>
+    <script>
+        //input -> previous reading, current reading -> validate current>previous
+        //calc total unit = current - prev
+        //cost per unit is 10rs, below 100 free, 2 more condition
+        // 15 is due date
+        check = 1;
+        while(check){
+            prevR = parseInt(prompt("Enter previous reading : "));
+            currR = parseInt(prompt("Enter current reading : "));
+            date = parseInt(prompt("Enter Date : "));
+            if(prevR<=currR){
+                check=0;
+            }
+            else{
+                alert("Error! current amount can't be less than previous amount.");
+            }
+        }
+        total = currR-prevR;
+        var amt;
+        if(total<100){
+            document.write("Amount to be paid is : Rs.0/-");
+            document.write("Your Electric bill is free");
+            
+        }
+        else if(total>=100 && total<400){
+            amt = 10*total;
+            document.write("Amount to be paid is : Rs.",amt,"/-");
+            document.write("You are charged a rate of 10 rs/unit");
+        }
+        else if(total>=400 && total<800){
+            amt = 12*total;
+            document.write("Amount to be paid is : Rs.",amt,"/-");
+            document.write("You are charged a rate of 12 rs/unit");
+        }
+        else if(total>=800){
+            amt = 15*total
+            document.write("Amount to be paid is : Rs.",amt,"/-");
+            document.write("You are charged a rate of 15 rs/unit");
+        }
+        if(date>15){
+            document.write("<br>Late Fine applied : ",date-15," days late payment , rs5/day is charged.");
+            document.write("<br>Fine to be paid is : ",(date-15)*5);
+            document.write("<br>Total amount to be paid after fine is : Rs.",amt+((date-15)*5),"/-");
+        }
+        
+
+    </script>
+</body>
+</html>

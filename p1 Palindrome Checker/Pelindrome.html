@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pelindrome Checker</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center><strong>PELINDROME CHECKER</strong></center>
+        </h1>
+    </header>
+    <!-- keyboard shortcuts  -->
+    <!-- <div class="cse"></div> => div.cse -->
+    <!-- <div id="reg"></div> => div#reg  -->
+    <!-- <div id="reg" class="cse"></div> => div#reg.cse  -->
+    <center><img src = "./palindromi.jpg"></center>
+    <div class="details">
+        <pre>
+            What is a palindrome?
+
+            A palindrome is a word or phrase that can be read the same way backward or forward, as with the words redivider,
+            kayak, and civic.
+
+            Palindromes are most often used to be creative and have fun with words. You might see them in ads to catch your
+            attention or a creative writing teacher might ask the class to write palindromes to help students think more
+            creatively.
+
+            In biology, a palindrome describes a sequence of nucleotides in DNA that matches a reverse line. The possible
+            nucleotide combinations are A-T and C-G, and the pairs can match up in any order. Sometimes they line up
+            palindromically, as when CCTAGG matches up with a sequence of GGATCC.
+
+            Example: One of the most famous palindromes is “Never Odd or Even,” which has the same letters backward and
+            forward.
+        </pre>
+    </div>
+
+    <div class="input" id="d2">
+        <P>Enter a word and check if it is a pelindrome : </P><input type="text" name = "Input Text" id="tex">
+        <button id="chek" onclick="PelindromeCheck()">CHECK</button>
+    </div>
+
+    <p id="out">
+        <br>
+        <br>
+        <br>
+    </p>
+
+    <script>
+        function PelindromeCheck(){
+            var text = document.getElementById("tex").value;
+            l = text.length;
+            var ist = "";
+            for(i=l-1;i>=0;i--){
+                ist += text[i];
+            }
+            if(text==ist){
+                document.getElementById("out").innerHTML = "The Entered Text is Palindrome!";
+            }
+            else{
+                document.getElementById("out").innerHTML = "The Entered Text is NOT Palindrome!";
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
