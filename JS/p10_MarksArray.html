@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Marks of students</h1>
+    <script>
+        arr = [];
+        for(i=0;i<5;i++){
+            a = parseInt(prompt("Enter marks of student ",i+1," : "));
+            arr.push(a);
+        }
+        console.log(arr);
+        sum = 0;
+        for(i in arr){
+            sum += arr[i];
+        }
+        console.log("Sum of marks is : ",sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> to show : 0th index value, sum of al even index value, sum of all odd index value</h1>
+    <script>
+        arr = [];
+        for(i=0;i<10;i++){
+            arr[i] = parseInt(prompt("Enter ",i+1,"th Number : "));
+        }
+        console.log(arr);
+        console.log("0th element of arr is : ",arr[0]);
+        oSum = 0;
+        eSum = 0;
+        for(i =0;i<arr.length;i+=2){
+            eSum += arr[i];
+            oSum += arr[i+1];
+        }
+        console.log("Sum of odd index elements : ",oSum);
+        console.log("Sum of even index elements : ",eSum);
+    </script>
+</body>
+</html>
