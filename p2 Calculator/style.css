@@ -55,3 +55,7 @@ body{
     background-image: url("./bgimg.jpg");
     background-size: 100%;
 }
+
+#oline{
+    border-style: solid;
+}

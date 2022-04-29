@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
+<body>
 
-    <center><div id="heading"><h1>BASIC CALCULATOR</h1></div></center>
+    <center>
+        <div id="heading">
+            <h1>BASIC CALCULATOR</h1>
+        </div>
+    </center>
 
     <center>
         <div id="inview">
             <input type="text" name="" id="inpv" value="">
         </div>
     </center>
-    
+
 
     <div id="input">
         <center>
@@ -41,7 +46,7 @@
         <center class="brow">
             <button id="#+ " onclick="plus()">+</button>
             <button id="#0" onclick="zero()">0</button>
-            <button id="#- "  onclick="sub()">-</button>
+            <button id="#- " onclick="sub()">-</button>
         </center>
         <center class="brow">
             <button id="#* " onclick="mult()">*</button>
@@ -53,90 +58,91 @@
             <button id="#esc" onclick="esc()">C</button>
             <button id="#clr" onclick="clr()">AC</button>
         </center>
-        
     </div>
-        
+
+
 
     <script>
-        function zero(){
+        function zero() {
             a = document.getElementById("inpv").value + "0";
             document.getElementById("inpv").value = a;
         }
-        function one(){
+        function one() {
             a = document.getElementById("inpv").value + "1";
             document.getElementById("inpv").value = a;
         }
 
-        function two(){
+        function two() {
             a = document.getElementById("inpv").value + "2";
             document.getElementById("inpv").value = a;
         }
-        function three(){
+        function three() {
             a = document.getElementById("inpv").value + "3";
             document.getElementById("inpv").value = a;
         }
-        function four(){
+        function four() {
             a = document.getElementById("inpv").value + "4";
             document.getElementById("inpv").value = a;
         }
-        function five(){
+        function five() {
             a = document.getElementById("inpv").value + "5";
             document.getElementById("inpv").value = a;
         }
-        function six(){
+        function six() {
             a = document.getElementById("inpv").value + "6";
             document.getElementById("inpv").value = a;
         }
-        function seven(){
+        function seven() {
             a = document.getElementById("inpv").value + "7";
             document.getElementById("inpv").value = a;
         }
-        function eight(){
+        function eight() {
             a = document.getElementById("inpv").value + "8";
             document.getElementById("inpv").value = a;
         }
-        function nine(){
+        function nine() {
             a = document.getElementById("inpv").value + "9";
             document.getElementById("inpv").value = a;
         }
-        function plus(){
+        function plus() {
             a = document.getElementById("inpv").value + "+";
             document.getElementById("inpv").value = a;
         }
-        function sub(){
+        function sub() {
             a = document.getElementById("inpv").value + "-";
             document.getElementById("inpv").value = a;
         }
-        function divd(){
+        function divd() {
             a = document.getElementById("inpv").value + "/";
             document.getElementById("inpv").value = a;
         }
-        function mult(){
+        function mult() {
             a = document.getElementById("inpv").value + "*";
             document.getElementById("inpv").value = a;
         }
-        function poi(){
+        function poi() {
             a = document.getElementById("inpv").value + ".";
             document.getElementById("inpv").value = a;
         }
-        function calc(){
+        function calc() {
             a = document.getElementById("inpv").value;
-            eval("res = "+a);
+            eval("res = " + a);
             document.getElementById("inpv").value = res;
         }
 
-        function esc(){
+        function esc() {
             a = document.getElementById("inpv").value;
             l = a.length;
-            a = a.slice(0,l-1);
+            a = a.slice(0, l - 1);
             document.getElementById("inpv").value = a;
         }
-        function clr(){
+        function clr() {
             document.getElementById("inpv").value = "";
 
         }
-        
+
     </script>
 
 </body>
+
 </html>
