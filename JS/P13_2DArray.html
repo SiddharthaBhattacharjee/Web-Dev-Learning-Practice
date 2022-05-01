@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        //code to take name and marks of 10 students in 2d array
+        var arr = [];
+        for(i=0;i<10;i++){
+            arr[i] = [];
+            arr[i][0] = prompt("Enter ",i+1,"th Student Name : ");
+            arr[i][1] = parseInt(prompt("Enter ",i+1,"th Student Marks : "));
+        }
+        console.log(arr);
+        //code to sort the array in descending order
+        arr.sort(function(a,b){
+            return b[1]-a[1];
+        });
+    </script>
+</body>
+</html>
