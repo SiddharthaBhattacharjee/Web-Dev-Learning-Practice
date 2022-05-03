@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body background="./bgimg.webp">
+    <div id="hellodiv">
+        <p id="hlo">
+        </p>
+    
+        <script>
+            var i = 0;
+            var txt = "Hello world! I am Siddhartha Bhattacharjee, A student and a Passionate Developer.";
+            var speed = 50;
+            function typeWriter() {
+                
+                text = txt;
+                if (i < text.length) {
+                    document.getElementById("hlo").innerHTML += text.charAt(i);
+                    i++;
+                    if(i==12){
+                        document.getElementById("hlo").innerHTML += "<br>";
+                    }
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter();
+        </script>
+    </div>
     <!-- basic portfolio website -->
     <div class="container">
         <div class="nav">
@@ -19,8 +42,17 @@
             </ul>
         </div>
         <div class="header">
-            <img class = "pfpRound" src="./pfp.jpg" alt="Siddhartha Bhattacharjee">
-            <h1>Siddhartha Bhattacharjee</h1>
+            <table>
+                <tr>
+                    <td>
+                        <img class = "pfpRound" src="./pfp.jpg" alt="Siddhartha Bhattacharjee">
+                    </td>
+                    <td>
+                        <h1 id="myname">Siddhartha Bhattacharjee</h1>
+                    </td>
+                </tr>
+            </table>
+            
         </div>
         
         <div class="content">
