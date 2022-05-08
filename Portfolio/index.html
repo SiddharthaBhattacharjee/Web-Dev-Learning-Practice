@@ -11,8 +11,10 @@
     <div id="hellodiv">
         <p id="hlo">
         </p>
+        <img id="scrollbuttonimg" src="./mous.png" onclick="scrollToNextDiv()">
     
         <script>
+
             var i = 0;
             var txt = "Hello world! I am Siddhartha Bhattacharjee, A student and a Passionate Developer.";
             var speed = 50;
@@ -27,6 +29,16 @@
                     }
                     setTimeout(typeWriter, speed);
                 }
+                else {
+                    document.getElementById('headerid').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            function scrollToNextDiv(){
+                document.getElementById('headerid').scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
             typeWriter();
         </script>
@@ -41,7 +53,7 @@
                 <li><a class="navele" href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="header">
+        <div class="header" id="headerid">
             <table>
                 <tr>
                     <td>
