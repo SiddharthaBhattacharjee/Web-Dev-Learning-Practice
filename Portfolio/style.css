@@ -90,3 +90,9 @@ ul{
     justify-content: center;
     margin-top: 35vh;
 }
+
+#scrollbuttonimg{
+    margin-top: 90px;
+    width: 45px;
+    height: 60px;
+}

@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    background-color: aqua;
+    height : 50px;
+    width : 100%;
+    position: fixed;
+}
+
+#header{
+    background-color: aquamarine;
+    height: 320px;
+}
+
+#superBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#box1{
+    background-color: rgb(197, 26, 177);
+    height: 300px;
+    width: 50%;
+}
+#box2{
+    background-color: rgb(197, 166, 26);
+    height: 300px;
+    width: 50%;
+}
+#bodyy{
+    align-items: center;
+    align-content: center;
+    height : 450px;
+}
+#content{
+    background-color: rgb(12, 189, 205);
+    width:80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+#footer{
+    background-color: rgb(42, 165, 54);
+    height: 100px;
+    width: 100%;
+}
