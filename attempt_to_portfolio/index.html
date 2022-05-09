@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhartha Bhattacharjee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="./bgimg.webp">
+    <div id="hellodiv">
+        <p id="hlo">
+        </p>
+        <img id="scrollbuttonimg" src="./mous.png" onclick="scrollToNextDiv()">
+    
+        <script>
+
+            var i = 0;
+            var txt = "Hello world! I am Siddhartha Bhattacharjee, A student and a Passionate Developer.";
+            var speed = 50;
+            function typeWriter() {
+                
+                text = txt;
+                if (i < text.length) {
+                    document.getElementById("hlo").innerHTML += text.charAt(i);
+                    i++;
+                    if(i==12){
+                        document.getElementById("hlo").innerHTML += "<br>";
+                    }
+                    setTimeout(typeWriter, speed);
+                }
+                else {
+                    document.getElementById('headerid').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            function scrollToNextDiv(){
+                document.getElementById('headerid').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            typeWriter();
+        </script>
+    </div>
+    <!-- basic portfolio website -->
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a class="navele" href="index.html">Home</a></li>
+                <li><a class="navele" href="about.html">About</a></li>
+                <li><a class="navele" href="portfolio.html">Portfolio</a></li>
+                <li><a class="navele" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header" id="headerid">
+            <table>
+                <tr>
+                    <td>
+                        <img class = "pfpRound" src="./pfp.jpg" alt="Siddhartha Bhattacharjee">
+                    </td>
+                    <td>
+                        <h1 id="myname">Siddhartha Bhattacharjee</h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        
+        <div class="content">
+            <h1>About Me</h1>
+            <p>
+                I am a web developer with a passion for creating beautiful and functional websites. I have a strong
+                background in graphic design and web development. I have a strong desire to learn new technologies and
+                improve my skills. I am currently looking for a position in the web development industry.
+            </p>
+            <h1>Skills</h1>
+            <p>
+                iu34ehckx.dmzfv kfxmgchxzfsdjo;qwldnx xzdhSKMDFNRGTBFBCVIJXOZREZDSHFHVCWLSRJGISVHDXIFDGJVKUAEHRSD,UHFCU DFHZXKFHVRIDUHF.AEHSDXVUCHELDRGKVHEZ/XKDGV
+
+</body>
+</html>
