@@ -4,35 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhartha Bhattacharjee</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body background="./bgimg.webp">
-    <div id="hellodiv">
-        <p id="hlo">
-        </p>
-        <img id="scrollbuttonimg" src="./mous.png" onclick="scrollToNextDiv()">
-    
+<body>
+    <div id="container">
+        <div id="nav"></div>
+        <div id="header">
+            <span id="sp1">
+                Hello World! I am<br>
+                <div id="nameContainer">
+                    <div id="mname">
+                    </div>
+                    <span class="input-cursor"></span>
+                </div>
+                A Student & Passionate Developer.
+            </span>
+        </div>
         <script>
-
+            toggle = true;
             var i = 0;
-            var txt = "Hello world! I am Siddhartha Bhattacharjee, A student and a Passionate Developer.";
-            var speed = 50;
+            var txt = "SIDDHARTHA BHATTACHARJEE";
+            j = txt.length;
+            var speed = 220;
+            function sleep (time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+            }
             function typeWriter() {
-                
                 text = txt;
-                if (i < text.length) {
-                    document.getElementById("hlo").innerHTML += text.charAt(i);
+                if (i <= text.length) {
+                    document.getElementById("mname").innerHTML = text.substring(0,i);
                     i++;
-                    if(i==12){
-                        document.getElementById("hlo").innerHTML += "<br>";
-                    }
                     setTimeout(typeWriter, speed);
                 }
                 else {
-                    document.getElementById('headerid').scrollIntoView({
-                        behavior: 'smooth'
+                    if(j==txt.length || j==txt.length-1){
+                        sleep(2000).then(() => {
+                        setTimeout(typeWriter, speed);
+                        document.getElementById("mname").innerHTML = txt.substring(0,j);
+                        if(j==0){
+                            j = txt.length;
+                            i = 0; 
+                        }
+                        j--;
                     });
+                    }
+                    else{
+                        setTimeout(typeWriter, speed);
+                        document.getElementById("mname").innerHTML = txt.substring(0,j);
+                        if(j==0){
+                            j = txt.length;
+                            i = 0; 
+                        }
+                        j--;
+                    }
                 }
             }
             function scrollToNextDiv(){
@@ -41,42 +66,69 @@
                 });
             }
             typeWriter();
-        </script>
-    </div>
-    <!-- basic portfolio website -->
-    <div class="container">
-        <div class="nav">
-            <ul>
-                <li><a class="navele" href="index.html">Home</a></li>
-                <li><a class="navele" href="about.html">About</a></li>
-                <li><a class="navele" href="portfolio.html">Portfolio</a></li>
-                <li><a class="navele" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="header" id="headerid">
-            <table>
-                <tr>
-                    <td>
-                        <img class = "pfpRound" src="./pfp.jpg" alt="Siddhartha Bhattacharjee">
-                    </td>
-                    <td>
-                        <h1 id="myname">Siddhartha Bhattacharjee</h1>
-                    </td>
-                </tr>
-            </table>
-            
-        </div>
-        
-        <div class="content">
-            <h1>About Me</h1>
-            <p>
-                I am a web developer with a passion for creating beautiful and functional websites. I have a strong
-                background in graphic design and web development. I have a strong desire to learn new technologies and
-                improve my skills. I am currently looking for a position in the web development industry.
-            </p>
-            <h1>Skills</h1>
-            <p>
-                iu34ehckx.dmzfv kfxmgchxzfsdjo;qwldnx xzdhSKMDFNRGTBFBCVIJXOZREZDSHFHVCWLSRJGISVHDXIFDGJVKUAEHRSD,UHFCU DFHZXKFHVRIDUHF.AEHSDXVUCHELDRGKVHEZ/XKDGV
 
+        </script>
+        <div id="superBox">
+            <div id="box1">
+                <div id="pfpCnt">
+                    <img src="./assets/pfp.jpg" alt="My Profile Picture" id="pfprnd">
+                </div>
+                <div id="bdata">
+                    <h3><u>PERSONAL INFO</u></h3><br>
+                    <h4>Name : </h4> Siddhartha Bhattacharjee<br>
+                    <h4>Email : </h4> siddharthabhatt2345@gmail.com<br>
+                    <h4>Phone : </h4> +91-7002744892<br>
+                    <h4>Website : </h4> siddharthaBhattacharjee2345.github.io<br>
+
+                </div>
+            </div>
+            <div id="box2">
+                <h3 id="abtme"><u>ABOUT ME</u></h3>
+                I am 18 Years old Passionate Programmer and a Dedicated Developer, I love to engage with tech clubs and community activities.
+                Coding is not only my passion but also my favourite hobby. I love to learn new things and solve problems.
+                My emphasis is on personal growth and learning, I am always looking for new ways to improve myself.
+                I value consistancy and hardwork, and try to learn something new every day.
+                <div id="accont">
+                    <button class="accordion">Strengths</button>
+                    <div class="panel">
+                    <p>I have worked in 4 different Languages (C,C++,Java,Python) , I have experience of baic android development
+                        and web deveopment, Have teamwork experience from working with 2 tech communities, I am consistant with my work and learning.
+                    </p>
+                    </div>
+
+                    <button class="accordion">Section 2</button>
+                    <div class="panel">
+                    <p>Coming Soon...</p>
+                    </div>
+
+                    <button class="accordion">Section 3</button>
+                    <div class="panel">
+                    <p>Coming Soon...</p>
+                    </div>
+                </div>
+                
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                          panel.style.maxHeight = null;
+                        } else {
+                          panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                      });
+                    }
+                </script>
+            </div>
+        </div>
+        <div id="bodyy">
+            <div id="content"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
 </body>
 </html>

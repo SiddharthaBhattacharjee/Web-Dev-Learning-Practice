@@ -1,0 +1,99 @@
+body{
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(194, 201, 205);
+    margin: 0;
+    padding: 0;
+}
+
+.pfpRound{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav{
+    /* basic top navbar */
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 5px #000;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* for list to be in one line */
+    display: flex;
+    justify-content: space-around;  /* space between items */
+    align-items: center;
+}
+
+.header{
+    margin-top: 50px;
+}
+
+.navele{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#myname{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+
+#hlobdy{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+#hellodiv{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #333;
+    background: url(./bggif.gif);
+    background-repeat: repeat;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    position: relative;
+}
+
+#hlo{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    margin-top: 35vh;
+}
+
+#scrollbuttonimg{
+    margin-top: 90px;
+    width: 45px;
+    height: 60px;
+}
