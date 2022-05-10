@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        items = [];
+        ch = 'y';
+        do{
+            items.push(parseInt(prompt("Enter Item : ")));
+            ch = prompt("Do You Want to Continue entering items Y/N :" );
+            ch = ch.toLowerCase();
+        }while(ch == 'y');
+        console.log("Items : ",items);
+        for(i in items){
+            console.log("Item ",i+1," : ",1000+items[i]);
+        }
+    </script>
+</body>
+</html>
