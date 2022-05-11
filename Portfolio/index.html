@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Siddhartha Bhattacharjee</title>
+    <link rel="icon" href="./assets/favicon.png">
 </head>
 
 <body>
     <div id="container">
-        <div id="nav"></div>
+        <div id="nav">
+            <ul id="navlis">
+                <li><a class="navele" onclick="scrollToNextDiv('header')">Home</a></li>
+                <li><a class="navele" onclick="scrollToNextDiv('skillhead')">My Skills</a></li>
+                <li><a class="navele" onclick="scrollToNextDiv('projects')">Projects</a></li>
+                <li><a class="navele" href="mailto: siddharthabhatt2345@gmail.com">Contact</a></li>
+            </ul>
+        </div>
         <div id="header">
             <span id="sp1">
                 Hello World! I am<br>
@@ -62,9 +71,9 @@
                     }
                 }
             }
-            function scrollToNextDiv() {
-                document.getElementById('headerid').scrollIntoView({
-                    behavior: 'smooth'
+            function scrollToNextDiv(a) {
+                document.getElementById(a).scrollIntoView({
+                    behavior: 'smooth',
                 });
             }
             typeWriter();
@@ -207,23 +216,58 @@
             </div>
         </div>
         <div id="projects">
+            <b><big style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:40px;color:antiquewhite;">
+                SOME OF MY PROJECTS
+            </big></b>
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <div class="text">Caption Text</div>
+                    <div class="text">
+                        <b><big style="font-size:xx-large;">PROJECT-1</big></b><br><br>
+                        <big style="font-size:x-large;">Encryptificator</big><br><br>
+                        <big style="font-size:xx-large;"><b>&#8220;</b></big>
+                        <big style="font-size:larger;">
+                            Encryptificator is a simple application that encrypts and decrypts text using a double layer encryption.<br>
+                        Each file has a unique key and can only be accessed from the device it was written on.</big>
+                        <big style="font-size:xx-large;"><b>&#8221;</b></big><br><br>
+                        <big style="font-size:larger;">
+                        Check it out here : <a href="https://github.com/SiddharthaBhattacharjee/Encriptificator" class="plink">Encriptificator</a>
+                        </big>
+                    </div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <div class="text">Caption Two</div>
+                    <div class="text">
+                        <b><big style="font-size:xx-large;">PROJECT-2</big></b><br><br>
+                        <big style="font-size:x-large;">TimeTable+</big><br><br>
+                        <big style="font-size:xx-large;"><b>&#8220;</b></big>
+                        <big style="font-size:larger;">
+                            TimeTable+ is a simple application that shows our class timetable and mess food table in a day wise basis with features
+                            like different color tint for finished,<br>ongoing and upcoming classes and some basic features like clock and calender.</big>
+                        <big style="font-size:xx-large;"><b>&#8221;</b></big><br><br>
+                        <big style="font-size:larger;">
+                        Check it out here : <a href="https://github.com/SiddharthaBhattacharjee/CSE_D_TableApp" class="plink">TimeTable+</a>
+                        </big>
+                    </div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <div class="text">Caption Three</div>
+                    <div class="text">
+                        <b><big style="font-size:xx-large;">PROJECT-3</big></b><br><br>
+                        <big style="font-size:x-large;">Care For Me</big><br><br>
+                        <big style="font-size:xx-large;"><b>&#8220;</b></big>
+                        <big style="font-size:larger;">
+                            Care-For-Me is a personal fitness application that focuses on consistent and progressional growth of fitness habits.<br> Includes features such as Improvement inducing Meditation Timer, step counter, record calender, calory calculator, etc.</big>
+                        <big style="font-size:xx-large;"><b>&#8221;</b></big><br><br>
+                        <big style="font-size:larger;">
+                        Check it out here : <a href="https://github.com/SiddharthaBhattacharjee/Health-And-Hygene-Android-App" class="plink">Care For Me</a>
+                        </big>
+                    </div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -269,7 +313,19 @@
                 }
             </script>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <b><big style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; margin-top: 10px;">Follow Me</big></b>
+            <div id="socials">
+                <a href="https://twitter.com/Siddhartha_2345" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/siddharthabhattacharjee2345/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/programmer_sid/" class="fa fa-instagram"></a>
+                <a href="https://github.com/SiddharthaBhattacharjee" class="fa fa-github"></a>
+            </div>
+            <div id="end">
+                © Made with ♥ by Siddhartha Bhattacharjee in 2022. All Rights Reserved.
+            </div>
+            
+        </div>
     </div>
 </body>
 
