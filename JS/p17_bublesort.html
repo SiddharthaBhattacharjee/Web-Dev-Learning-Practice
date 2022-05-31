@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        mark = [20,60,10,30,5];
+        for(i in mark){
+            for(j=0;j<mark.length-i-1;j++){
+                if(mark[j]>mark[j+1]){
+                    temp = mark[j];
+                    mark[j] = mark[j+1];
+                    mark[j+1] = temp;
+                }
+            }
+        }
+        console.log(mark);
+    </script>
+</body>
+</html>

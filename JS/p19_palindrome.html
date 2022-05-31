@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        arr = [1,2,3,4,5,6,7,6,5,4,3,2,1];
+        pel = true;
+        l = arr.length-1;
+        for(i=0;i<=(arr.length-1)/2;i++){
+            if(arr[i]==arr[l--]){
+                continue;
+            }
+            else{
+                pel = false;
+                break;
+            }
+        }
+        if(pel){
+            console.log("Pelindrome");
+            flag1 = false;
+            flag2 = false;
+            flag3 = false;
+            flag4 = false;
+            flag5 = false;
+            flag6 = false;
+            for(i=0;i<(arr.length-1)/2;i++){
+                if(arr[i]==1){
+                    flag1 = true;
+                }
+                else if(arr[i]==2){
+                    flag2 = true;
+                }
+                else if(arr[i]==3){
+                    flag3 = true;
+                }
+                else if(arr[i]==4){
+                    flag4 = true;
+                }
+                else if(arr[i]==5){
+                    flag5 = true;
+                }
+                else if(arr[i]==6){
+                    flag6 = true;
+                }
+            }
+            if(flag1 && flag2 && flag3 && flag4 && flag5 && flag6){
+                console.log("It is a rainbow array");
+            }
+            else{
+                console.log("It is NOT a rainbow array");
+            }
+        }
+        else{
+            console.log("Not Pelindrome");
+        }
+
+    </script>
+</body>
+</html>
