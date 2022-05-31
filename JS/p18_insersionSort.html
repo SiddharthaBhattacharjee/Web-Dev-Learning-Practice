@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There 2!</h1>
+    <script>
+        arr = [20,60,10,30,5];
+        for(i=0;i<arr.length;i++){
+            key = arr[i];
+            j=i-1;
+            while(j>=0 && key<arr[j]){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1] = key;
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

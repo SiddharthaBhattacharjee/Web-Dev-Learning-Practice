@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        function shift(arr,i){
+            for(j=i+1;j<arr.length;j++){
+                arr[j-1] = arr[j];
+            }
+        }
+        arr = [2,3,1,5,4,6,9,7,8,0];
+        x = parseInt(prompt("Enter the value to be searched : "));
+        if(arr.includes(x)){
+            for(i in arr){
+                if(arr[i]==x){
+                    console.log("Element found in position : "+i);
+                    c = prompt("Do you want to Delete the element ? Y/N : ");
+                    if(c=='y' || c == 'Y'){
+                        for(j=i;j<arr.length;){
+                            arr[j] = arr[++j];
+                        }
+                        y = parseInt(prompt("Enter New Number to replace the old one : "));
+                        arr[arr.length-1] = y;
+                        console.log("New Array is : ");
+                        console.log(arr);
+                    }
+                }
+            }
+        }
+        else{
+            console.log("404: Element not found in array!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        function sort(arr){
+            for(i=0;i<arr.length;i++){
+                key = arr[i];
+                j=i-1;
+                while(j>=0 && key<arr[j]){
+                    arr[j+1]=arr[j];
+                    j--;
+                }
+                arr[j+1] = key;
+            }
+        }
+        arr = [2,1,6,3,5,4,7,9,8,0];
+        x = parseInt(prompt("Enter Number to be Searched : "));
+        first = 0;
+        last = arr.length-1;
+        while(last>=first){
+            mid = Math.floor((first+last)/2);
+            if(arr[mid] == x){
+                console.log("Element found in position : "+mid);
+            }
+            if(arr[mid]>x){
+                last = mid-1;
+            }
+            else{
+                first = mid+1;
+            }
+        }
+    </script>
+</body>
+</html>
