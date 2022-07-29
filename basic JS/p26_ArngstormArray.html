@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>JS1</title>
+</head>
+<body>
+    <h1> Hello There!</h1>
+    <script>
+        arr=[];
+        for(i=0;i<1000;i++){
+            h = Math.floor(i/100);  // h=i%100
+            tp = i%100;
+            t = Math.floor(tp/10);
+            u = tp%10;
+            if(i == (u**3 + t**3 + h**3)){
+                arr.push(i);
+            }
+        }
+        console.log("Array of Angstorm numbers upto 1000 : \n");
+        console.log(arr);
+    </script>
+</body>
+</html>
