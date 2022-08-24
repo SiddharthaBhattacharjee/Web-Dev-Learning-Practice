@@ -1,0 +1,5 @@
+Shortcuts : 
+
+elementname.classname <enter> => shortcut to create element with class
+.classname => creates a div wit specified class
+elementname.classname1.classname2 => creates element with multiple classes
