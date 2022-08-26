@@ -8,6 +8,7 @@
     <title>First Responsive Website</title>
 </head>
 <body>
+    <script src="./js/scrypt.js"></script>
     <nav class="navbar background">
         <ul class="nav-list">
             <div class="logo"> <img src="./assets/favicon.png" alt="logo"> </div>
@@ -31,8 +32,8 @@
                     It is not as hard to do as it seems, its quiet simple actually.
                 </p>
                 <div class="buttons">
-                    <button class="btn">My GutHub</button>
-                    <button class="btn">My Twitter</button>
+                    <button class="btn" onclick="githubopen()">My GutHub</button>
+                    <button class="btn" onclick="twitteropen()">My Twitter</button>
                 </div>
             </div>
             <div class="secondhalf">
@@ -53,17 +54,17 @@
             </p>
         </div>
         <div class="thumbnail">
-            <img id="thn" src="./assets/github.jpg" alt="thumbnail">
+            <img id="thn" src="https://source.unsplash.com/random/900X900/?Education,coding" alt="thumbnail">
         </div>
     </section>
 
     <section class="secRight">
         <div class="thumbnail">
-            <img id="thnl" src="./assets/pandasecurity-How-do-hackers-pick-their-targets.jpg" alt="thumbnail">
+            <img id="thnl" src="https://source.unsplash.com/random/900X900/?coding,tech" alt="thumbnail">
         </div>
         <div class="paras">
         
-            <p class="txtbig" style="font-weight:bold;">Why make this website?</p>
+            <p class="txtbig" style="font-weight:bold;">More about Responsive.</p>
             <p class="txtsmall" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Making the website is the best and fastest way of getting a good understanding as well as a practice of the topic, it helps in better understanding the process as compared to just reading.
                 To be honest I have no idea what I am writing, I just need to fill some lines to test the website out so I am writing anything that comes to my mind, also its a good typing practice to do every once in a while.
                 While we are on the topic of typing, I have been trying to learn touch typing for a while now but I find it very difficult to master, I have seen that I have a far supirior muscle memory of typing with just 4 fingers and 
@@ -77,7 +78,7 @@
 
     <section class="secRight">
         <div class="paras">
-            <p class="txtbig" style="font-weight:bold;">Why make this website?</p>
+            <p class="txtbig" style="font-weight:bold;">Projects Good for learning and Practice?</p>
             <p class="txtsmall" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Making the website is the best and fastest way of getting a good understanding as well as a practice of the topic, it helps in better understanding the process as compared to just reading.
                 To be honest I have no idea what I am writing, I just need to fill some lines to test the website out so I am writing anything that comes to my mind, also its a good typing practice to do every once in a while.
                 While we are on the topic of typing, I have been trying to learn touch typing for a while now but I find it very difficult to master, I have seen that I have a far supirior muscle memory of typing with just 4 fingers and 
@@ -87,9 +88,34 @@
             </p>
         </div>
         <div class="thumbnail">
-            <img id="thnll" src="./assets/pal.png" alt="thumbnail">
+            <img id="thnll" src="https://source.unsplash.com/random/900X900/?hacker,coding" alt="thumbnail">
         </div>
     </section>
+    <hr>
+    <section class="contact">
+        <h2 class="text_center">Contact US</h2>
+        <div class="cus">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input type="email" name="Email" id="email" placeholder="Enter Your Email">
+            <textarea class="forminput" name="message" id="message" cols="30" rows="10"  placeholder="Enter Your Message"></textarea>
+            <button class="btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <div id="footer">
+        <b><big style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; margin-top: 10px;">Follow Me</big></b>
+        <div id="socials">
+            <a href="https://twitter.com/Siddhartha_2345" ><img src="./assets/twitter.png" class="fa"></a>
+            <a href="https://www.linkedin.com/in/siddharthabhattacharjee2345/"><img src="./assets/linkedin.png" class="fa"></a>
+            <a href="https://www.instagram.com/programmer_sid/"><img src="./assets/instagram.png" class="fa"></a>
+            <a href="https://github.com/SiddharthaBhattacharjee"><img src="./assets/github.png" class="fa"></a>
+        </div>
+        <div id="end">
+            © Made with ♥ by Siddhartha Bhattacharjee in 2022. All Rights Reserved.
+        </div>
+        
+    </div>
 
     
 
