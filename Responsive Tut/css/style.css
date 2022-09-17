@@ -5,7 +5,9 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
 
 .logo{
     width:20%;
@@ -93,7 +95,7 @@
 }
 
 #ico{
-    width:240px;
+    width:200px;
     padding : 2px 0;
 }
 
@@ -226,7 +228,7 @@
 }
 
 .cus input{
-    width: 100%;
+    width: 94%;
     font-size: 19px;
     border: 2px solid gray;
     border-radius: 6px;
@@ -235,7 +237,7 @@
 }
 
 .forminput{
-    width: 100%;
+    width: 94%;
     font-size: 19px;
     border: 2px solid gray;
     border-radius: 6px;
@@ -253,6 +255,9 @@
     font-size: 20px;
 }
 
+.footerclass{
+    position: static;
+}
 
 #footer{
     background-color: rgb(19, 19, 19);
@@ -290,7 +295,7 @@
     border-bottom: 0;
     border-right: 0;
     border-left: 0;
-    width: 700px;
+    width: 96%;
     text-align: center;
     align-self: center;
     margin: 0 auto;
@@ -298,4 +303,93 @@
     margin-top: 12px;
   }
 
+  .footersec{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+  }
 
+
+  .burger{
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 20px;
+    display: none;
+
+  }
+  .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  .wmlogo{
+    position: absolute;
+    width:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left : 5%;
+    top : 8px;
+    display: none;
+
+  }
+  .wmlogo img{
+    width : 48px;
+    border: solid white;
+    border-radius: 50px;
+    background: wheat;
+
+}
+
+/* 
+media query starts here */
+
+@media only screen and (max-width: 1100px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .wmlogo{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .secRight{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .secondhalf{
+        width: auto;
+    }
+    #end{
+        font-size: 10px;
+    }
+}

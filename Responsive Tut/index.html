@@ -8,9 +8,9 @@
     <title>First Responsive Website</title>
 </head>
 <body>
-    <script src="./js/scrypt.js"></script>
-    <nav class="navbar background">
-        <ul class="nav-list">
+    <nav class="navbar background h-nav">
+        <div class="wmlogo"> <img src="./assets/favicon.png" alt="logo"> </div>
+        <ul class="nav-list v-class">
             <div class="logo"> <img src="./assets/favicon.png" alt="logo"> </div>
             <!-- href = #id , scrolls to the element with this if -->
             <li> <a href="#home"> Home</a> </li>
@@ -18,9 +18,14 @@
             <li> <a href="#services"> Services</a> </li>
             <li> <a href="#contact"> Contact Us</a> </li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav v-class">
             <input type="text" name="search" id="search">
             <button class="btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
@@ -103,20 +108,22 @@
         </div>
     </section>
 
-    <div id="footer">
-        <b><big style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; margin-top: 10px;">Follow Me</big></b>
-        <div id="socials">
-            <a href="https://twitter.com/Siddhartha_2345" ><img src="./assets/twitter.png" class="fa"></a>
-            <a href="https://www.linkedin.com/in/siddharthabhattacharjee2345/"><img src="./assets/linkedin.png" class="fa"></a>
-            <a href="https://www.instagram.com/programmer_sid/"><img src="./assets/instagram.png" class="fa"></a>
-            <a href="https://github.com/SiddharthaBhattacharjee"><img src="./assets/github.png" class="fa"></a>
+    <footer class="background footerclass">
+        <div id="footer">
+            <b><big style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; margin-top: 10px;">Follow Me</big></b>
+            <div id="socials">
+                <a href="https://twitter.com/Siddhartha_2345" ><img src="./assets/twitter.png" class="fa"></a>
+                <a href="https://www.linkedin.com/in/siddharthabhattacharjee2345/"><img src="./assets/linkedin.png" class="fa"></a>
+                <a href="https://www.instagram.com/programmer_sid/"><img src="./assets/instagram.png" class="fa"></a>
+                <a href="https://github.com/SiddharthaBhattacharjee"><img src="./assets/github.png" class="fa"></a>
+            </div>
+            <div id="end">
+                © Made with ♥ by Siddhartha Bhattacharjee in 2022. All Rights Reserved.
+            </div>
+            
         </div>
-        <div id="end">
-            © Made with ♥ by Siddhartha Bhattacharjee in 2022. All Rights Reserved.
-        </div>
-        
-    </div>
-
+    </footer>
+    <script src="./js/scrypt.js"></script>
     
 
 </body>
